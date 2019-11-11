@@ -36,6 +36,7 @@ class String
     sentences = closer.map do |string|
       string.split("!")
     end
+    sentences = sentences.flatten
     p sentences
     sentences.length
   end
