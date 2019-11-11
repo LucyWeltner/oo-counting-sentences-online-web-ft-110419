@@ -28,12 +28,17 @@ class String
 
   def count_sentences
     array = self.split(".")
+    p array
     closer = array.map do |string|
       string.split("?")
+      p closer
     end 
     sentences = array.map do |string|
       string.split("!")
+      p sentences
     end
     sentences.length
   end
 end
+
+count_sentences("This, well, is a sentence. This is too!! And so is this, I think? Woo...")
