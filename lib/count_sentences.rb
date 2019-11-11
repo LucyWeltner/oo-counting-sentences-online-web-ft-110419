@@ -31,12 +31,12 @@ class String
     p array
     closer = array.map do |string|
       string.split("?")
-      p closer
     end 
+    p closer
     sentences = array.map do |string|
       string.split("!")
-      p sentences
     end
+    p sentences
     sentences.length
   end
 end
