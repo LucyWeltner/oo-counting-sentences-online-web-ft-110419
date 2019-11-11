@@ -27,6 +27,13 @@ class String
   end
 
   def count_sentences
-    
+    array = self.split(".")
+    closer = array.map do |string|
+      string.split("?")
+    end 
+    sentences = array.map do |string|
+      string.split("!")
+    end
+    sentences.length
   end
 end
