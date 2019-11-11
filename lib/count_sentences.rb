@@ -42,3 +42,5 @@ class String
 end
 
 "This, well, is a sentence. This is too!! And so is this, I think? Woo...".count_sentences
+string = "ldfkhadflajowurewra"
+p string.split
