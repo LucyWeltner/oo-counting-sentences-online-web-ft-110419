@@ -38,9 +38,6 @@ class String
     end
     sentences = sentences.flatten
     sentences = sentences.delete_if{|sentence| sentence == ""}
-    p sentences
     sentences.length
   end
 end
-
-"This, well, is a sentence. This is too!! And so is this, I think? Woo...".count_sentences
