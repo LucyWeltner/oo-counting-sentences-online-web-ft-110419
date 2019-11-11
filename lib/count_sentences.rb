@@ -37,7 +37,7 @@ class String
       string.split("!")
     end
     sentences = sentences.flatten
-    if sentences.includes?(" ")
+    sentences = sentences.delete_if(|sentence| sentence == "")
     p sentences
     sentences.length
   end
