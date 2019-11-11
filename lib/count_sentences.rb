@@ -29,11 +29,11 @@ class String
   def count_sentences
     array = self.split(".")
     p array
-    closer = array.map.flatten do |string|
+    closer = array.map do |string|
       string.split("?")
     end 
-    p closer
-    sentences = array.map.flatten do |string|
+    closer = closer.flatten
+    sentences = closer.map do |string|
       string.split("!")
     end
     p sentences
